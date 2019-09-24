@@ -2,7 +2,7 @@
 
 """
 Script to test methods supported by a web server
-usage: ./test_methods.py <http://ip> or <http://hostname>
+usage: ./test_methods.py <http://ip> or <http://hostname> or <http://hostname/path/to/target>
 """
 
 import requests
