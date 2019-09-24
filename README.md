@@ -6,3 +6,8 @@ Not much of a work, of course, but useful nonetheless, and publishing them here 
    - Web
 
        test-methods.py : a script to test methods supported by a web server
+
+    - Wifi
+
+	get-ssid.py : analyse basique d'un fichier pcap pour extraire mac et ssid des ap rencontrées
+
