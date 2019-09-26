@@ -1,4 +1,5 @@
 #!/usr/bin/env python3 
+#-*- coding: utf-8 -*-
 
 '''
 Script pour extraire d'une capture pcap d'un réseaux wifi, les AP trouvées et afficher leur adresse mac et ssid
