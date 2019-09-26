@@ -5,6 +5,7 @@ Not much of a work, of course, but useful nonetheless, and publishing them here 
 
    - Web
 
+       htmlentities.py : a simple html entities decoder, for rewriting purposes in shell script
        test-methods.py : a script to test methods supported by a web server
 
    - Wifi
