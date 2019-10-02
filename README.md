@@ -5,11 +5,11 @@ Not much of a work, of course, but useful nonetheless, and publishing them here 
 
    - Web
 
-	htmlentities.py : a simple html entities decoder, for rewriting purposes in shell script
-	getcookies.py   : like html entities, a one simple purpose script, connect to a page, and print retrieved cookies, useful for session continuity when hacking
-	test-methods.py : a script to test methods supported by a web server
+     htmlentities.py : a simple html entities decoder, for rewriting purposes in shell script
+     getcookies.py   : like html entities, a one simple purpose script, connect to a page, and print retrieved cookies, useful for session continuity when hacking
+     test-methods.py : a script to test methods supported by a web server
 
    - Wifi
 
-        get-ssid.py : extract the sid from a capture of a wifi session 
+     get-ssid.py : extract the sid from a capture of a wifi session 
 
