@@ -5,6 +5,7 @@ Not much of a work, of course, but useful nonetheless, and publishing them here 
 
    - Web
 
+     * urlextact.py    : extract link of interest from an url, in order to build web site analyser/mirrorer/hacker scripts
      * htmlentities.py : a simple html entities decoder, for rewriting purposes in shell script
      * getcookies.py   : like html entities, a one simple purpose script, connect to a page, and print retrieved cookies, useful for session continuity when hacking
      * test-methods.py : a script to test methods supported by a web server
