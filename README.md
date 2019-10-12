@@ -14,8 +14,7 @@ Not much of a work, of course, but useful nonetheless, and publishing them here 
 
      * get-ssid.py : extract the sid from a capture of a wifi session 
 
-
-   - Liens Internet
+And to complete my work, some p-o-i on internet : 
 
      * https://ired.team/offensive-security-experiments/offensive-security-cheetsheets
 
