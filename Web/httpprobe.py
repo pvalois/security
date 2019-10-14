@@ -33,7 +33,12 @@ def getinfo(url):
     return
 
   print ("Url        : "+url)
-  print ("Server     : "+response.headers['server'])
+
+  try:
+    print ("Server     : "+response.headers['server'])
+  except:
+    print ("Server     : <Undisclosed>")
+
   print ("Page title : ", end="")
 
   soup = bs(response.content, 'lxml')
