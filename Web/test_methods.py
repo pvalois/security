@@ -32,7 +32,8 @@ codes={"100":"Continue", "101":"Switching Protocols", "102":"Processing", "103":
 def expand_rc(r):
   print (r.status_code, end=" ");
   try:
-    print (codes[str(r.status_code)])
+    print (codes[str(r.status_code)],end=" ")
+    print ("(%d bytes document size)" %(len(r.content)))
   except:
     print ("")
 
