@@ -5,7 +5,6 @@ import sys
 import re
 import shlex
 import getopt
-import os.path
 import collections
 from ipwhois import IPWhois
 from dumper import dump
@@ -25,16 +24,19 @@ except getopt.GetoptError as err:
 for opt, optarg in options:
   if opt in ("-f","--file"): logfile=optarg
 
-print ("Parsing file", logfile)
-
-if (not os.path.isfile(logfile)):
-  print ("file non existent")
-  sys.exit(0)
+if (logfile == "-"):
+  logfp=sys.stdin
+else:
+  try:
+    logfp=open(logfile, "r") 
+  except:
+    print ("Can't open file")
+    sys.exit(0)
 
 log404=[]
-
 cpt=0
-with open(logfile, "r") as logfp: 
+
+with logfp: 
   for line in logfp:
 
     cpt=cpt+1
@@ -56,8 +58,11 @@ print ("Top 404")
 print ("-------------------------------------------------")
 
 for candidat in freq:
-   who = IPWhois(candidat)
-   results = who.lookup_whois() 
-   country=results['nets'][0]['country']
+   try:
+     who = IPWhois(candidat)
+     results = who.lookup_whois() 
+     country=results['nets'][0]['country']
+   except:
+     country="Private or Undocumented"
 
    print ("%15s | %5d | %s"  %(candidat,freq[candidat],country))
