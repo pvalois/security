@@ -17,3 +17,7 @@ Not much of a work, of course, but useful nonetheless, and publishing them here 
 
      * get-ssid.py : extract the sid from a capture of a wifi session 
 
+   - Reverse Engineering
+	
+     * r2graphasm.py : script using radare2 to generate a flowchart of disassembled binary
+
