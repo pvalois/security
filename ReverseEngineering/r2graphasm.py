@@ -2,12 +2,7 @@
 
 import sys
 import os
-
-try:
-  import r2pipe
-except:
-  print ("Please install __radare2__and __r2pipe__ python3 lib")
-  sys.exit(0)
+import r2pipe
 
 try:
   binary=sys.argv[1]
