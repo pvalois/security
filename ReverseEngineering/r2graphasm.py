@@ -1,8 +1,13 @@
 #!/usr/bin/env python3 
 
-import r2pipe
 import sys
 import os
+
+try:
+  import r2pipe
+except:
+  print ("Please install __radare2__and __r2pipe__ python3 lib")
+  sys.exit(0)
 
 try:
   binary=sys.argv[1]
