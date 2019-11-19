@@ -40,10 +40,11 @@ for ank in anchors:
   for line in soup.find_all(ank):
     for key in anchors[ank]:
       if line.get(key):
-        if (line.get(key) not in glob):
-          glob.append(line.get(key))
+        link=line.get(key)
+        if link not in glob:
+          glob.append(link)
 
 for link in sorted(glob):
-    if link[0] == '/':
-       link=url+link
+    if not '://' in link:
+       link=url+"/"+link
     print (link)

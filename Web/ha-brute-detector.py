@@ -16,7 +16,7 @@ Oct 20 01:01:49 teknomage haproxy[17010]: 103.60.221.239:58703 [20/Oct/2019:01:0
 logfile="/var/log/haproxy.log"
 
 try:
-  options, remain = getopt.getopt(sys.argv[1:], "f:", ["file:"])
+  options, remain = getopt.gnu_getopt(sys.argv[1:], "f:", ["file:"])
 except getopt.GetoptError as err:
   print (err)
   sys.exit(1)
